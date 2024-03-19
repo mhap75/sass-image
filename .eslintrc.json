@@ -1,3 +1,44 @@
 {
-  "extends": "next/core-web-vitals"
+  "parser": "@typescript-eslint/parser",
+  "extends": [
+    "next/core-web-vitals",
+    "eslint:recommended",
+    "react-app",
+    "prettier",
+    "plugin:prettier/recommended"
+  ],
+  "plugins": [
+    /* =======================
+     *   ESLint Plugins
+     * ======================= */
+    "@typescript-eslint",
+    "prettier"
+  ],
+  "globals": {
+    /* =======================
+     *   Global Variables
+     * ======================= */
+    "React": "readonly"
+  },
+  "rules": {
+    /* =======================
+     *   Rules Configuration
+     * ======================= */
+    "no-unused-vars": 1,
+    "react-hooks/rules-of-hooks": "error",
+    "react-hooks/exhaustive-deps": "warn",
+    "no-console": "warn"
+  },
+  "overrides": [
+    {
+      /* =======================
+       *   TypeScript Overrides
+       * ======================= */
+      "files": ["**/*.ts", "**/*.tsx"],
+      "rules": {
+        "@typescript-eslint/no-unused-vars": ["warn"],
+        "@typescript-eslint/no-explicit-any": ["warn"]
+      }
+    }
+  ]
 }

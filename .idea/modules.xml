@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/.idea/sass-image.iml" filepath="$PROJECT_DIR$/.idea/sass-image.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/saas-image.iml" filepath="$PROJECT_DIR$/.idea/saas-image.iml" />
     </modules>
   </component>
 </project>
